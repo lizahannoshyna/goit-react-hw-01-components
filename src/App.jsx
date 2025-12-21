@@ -20,7 +20,7 @@ function App() {
     <>
       <Profile data={user} />
       <Statistics title="Upload stats" stats={stats} />
-      <FriendList friends={friends} />
+      <FriendList title="My friends list" friends={friends} />
       <TransactionHistory items={transactions} />
     </>
   )
