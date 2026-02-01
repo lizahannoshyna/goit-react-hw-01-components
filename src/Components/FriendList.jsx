@@ -5,8 +5,6 @@ const FriendList = ({title, friends}) => {
     return (
         <section className={styles.friendsListWrp}>
 
-            <h2 className={styles.friendsListTitle}>{title}</h2>
-
             <ul className={styles.friendsList}>
                 {friends.map(friend => (
                     <li className={styles.item} key={friend.id}>

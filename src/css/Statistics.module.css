@@ -1,15 +1,7 @@
 .statistics {
   margin: 0 auto;
 }
-.title {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 20px 0;
-    margin: 0;
-    color: #4a4a4a;
-    text-transform: uppercase;
-}
+
 
 .statList {
     list-style: none;

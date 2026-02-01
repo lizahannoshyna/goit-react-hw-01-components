@@ -3,6 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
+import Container from "./Components/Container";
+
 import Profile from "./Components/Profile";
 import user from "./Data/user.json";
 
@@ -13,17 +15,28 @@ import FriendList from "./Components/FriendList";
 import friends from "./Data/friends.json";
 
 import TransactionHistory from "./Components/TransactionHistory";
-import transactions from "./Data/transactions.json"
+import transactions from "./Data/transactions.json";
 
 function App() {
   return (
     <>
-      <Profile data={user} />
-      <Statistics title="upload stats" stats={stats} />
-      <FriendList title="my friends list" friends={friends} />
-      <TransactionHistory items={transactions} />
+      <Container title="Profile">
+        <Profile data={user} />
+      </Container>
+
+      <Container title="upload stats">
+        <Statistics stats={stats} />
+      </Container>
+
+      <Container title="my friends list">
+        <FriendList friends={friends} />
+      </Container>
+
+      <Container title="Transaction History">
+        <TransactionHistory items={transactions} />
+      </Container>
     </>
-  )
+  );
 }
 
 export default App;

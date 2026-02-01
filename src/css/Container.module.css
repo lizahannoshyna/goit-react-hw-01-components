@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  width: 750px;
+  padding: 0px 15px;
+  border-left: 5px double rgb(255, 243, 245);
+  border-right: 5px double rgb(255, 243, 245);
+}
+
+.containerTitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px 0;
+  margin: 0;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
